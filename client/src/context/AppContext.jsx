@@ -8,7 +8,7 @@ export const AppContentProvider = (props) => {
 
     axios.defaults.withCredentials = true;
 
-    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    const backendUrl = "https://secureauth-backend-msml.onrender.com";
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userData, setUserData] = useState(false);
 
