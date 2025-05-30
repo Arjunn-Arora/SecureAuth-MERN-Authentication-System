@@ -19,7 +19,7 @@ const Navbar = () => {
       );
 
       if (data.success) {
-        navigate("/email-verify");
+        navigate("/verify-email");
         toast.success(data.message);
       } else {
         toast.error(data.message);

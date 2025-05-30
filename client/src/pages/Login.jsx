@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 
 export const Login = () => {
 
-    const [state, setState] = useState("Sign In");
+    const [state, setState] = useState("Login");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -31,7 +31,7 @@ export const Login = () => {
        try {
             axios.defaults.withCredentials = true;
              e.preventDefault();
-        if(state ===" Sign Up"){
+        if(state ==="Sign Up"){
           const {data} = await axios.post(backendUrl + "/api/auth/register", {name, email, password})
           if(data.success){
             setIsLoggedIn(true)
