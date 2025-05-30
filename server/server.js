@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://secure-auth-phi.vercel.app/",
     credentials: true}));
 
 const port = process.env.port || 3000;
