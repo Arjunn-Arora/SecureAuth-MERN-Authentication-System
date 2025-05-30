@@ -4,7 +4,7 @@ import { AppContext } from "../context/AppContext";
 
 export const Header = () => {
 
-    const {userData} = useContext(AppContent);
+    const {userData} = useContext(AppContext);
 
     return(
         <>
