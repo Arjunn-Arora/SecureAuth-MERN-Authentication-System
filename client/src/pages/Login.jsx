@@ -5,7 +5,7 @@ import { AppContent } from "../context/AppContext";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const Login = () => {
+export const Login = () => {
   const navigate = useNavigate();
 
   const { backendUrl, setIsLoggedin, getUserData } = useContext(AppContent);
@@ -147,5 +147,3 @@ const Login = () => {
     </div>
   );
 };
-
-export default Login;
