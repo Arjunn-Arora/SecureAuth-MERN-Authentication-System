@@ -29,7 +29,7 @@ export const Login = () => {
         });
 
         if (data.success) {
-          setIsLoggedin(true);
+          setIsLoggedIn(true);
           getUserData();
           navigate("/");
         } else {
@@ -42,7 +42,7 @@ export const Login = () => {
         });
 
         if (data.success) {
-          setIsLoggedin(true);
+          setIsLoggedIn(true);
           getUserData();
           navigate("/");
         } else {
