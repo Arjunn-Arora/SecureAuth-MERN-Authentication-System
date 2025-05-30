@@ -46,8 +46,8 @@ export const AppContextProvider = (props) => {
     };
 
     return(
-        <AppContent.Provider value={value}>
+        <AppContext.Provider value={value}>
             {props.children}
-        </AppContent.Provider>
+        </AppContext.Provider>
     );
 };
