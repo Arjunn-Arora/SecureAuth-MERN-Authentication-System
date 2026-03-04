@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef } from "react";
 import { assets } from "../assets/assets";
 import axios from "axios";
-import { AppContent } from "../context/AppContext";
+import { AppContext } from "../context/AppContext";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
@@ -9,7 +9,7 @@ export const VerifyEmail = () => {
         axios.defaults.withCredentials = true;
 
   const { backendUrl, isLoggedin, userData, getUserData } =
-    useContext(AppContent);
+    useContext(AppContext);
 
   const navigate = useNavigate();
 
