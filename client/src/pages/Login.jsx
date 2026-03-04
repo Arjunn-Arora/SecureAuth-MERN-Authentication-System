@@ -5,17 +5,10 @@ import { AppContext } from "../context/AppContext";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-<<<<<<< HEAD
-const Login = () => {
-  const navigate = useNavigate();
-
-  const { backendUrl, setIsLoggedin, getUserData } = useContext(AppContext);
-=======
 export const Login = () => {
   const navigate = useNavigate();
 
   const { backendUrl, setIsLoggedIn, getUserData } = useContext(AppContext);
->>>>>>> ce46e759d4cbb5b17037090d5fd8e009fd13db74
 
   const [state, setState] = useState("Sign Up");
   const [name, setName] = useState("");
@@ -36,11 +29,7 @@ export const Login = () => {
         });
 
         if (data.success) {
-<<<<<<< HEAD
-          setIsLoggedin(true);
-=======
           setIsLoggedIn(true);
->>>>>>> ce46e759d4cbb5b17037090d5fd8e009fd13db74
           getUserData();
           navigate("/");
         } else {
@@ -53,11 +42,7 @@ export const Login = () => {
         });
 
         if (data.success) {
-<<<<<<< HEAD
-          setIsLoggedin(true);
-=======
           setIsLoggedIn(true);
->>>>>>> ce46e759d4cbb5b17037090d5fd8e009fd13db74
           getUserData();
           navigate("/");
         } else {
@@ -162,8 +147,3 @@ export const Login = () => {
     </div>
   );
 };
-<<<<<<< HEAD
-
-export default Login;
-=======
->>>>>>> ce46e759d4cbb5b17037090d5fd8e009fd13db74

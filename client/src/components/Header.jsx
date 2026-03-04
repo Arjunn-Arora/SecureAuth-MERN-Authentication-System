@@ -4,13 +4,9 @@ import { AppContext } from "../context/AppContext";
 
 export const Header = () => {
 
-<<<<<<< HEAD
     //testing deployment
 
-    const {userData} = useContext(AppContent);
-=======
     const {userData} = useContext(AppContext);
->>>>>>> ce46e759d4cbb5b17037090d5fd8e009fd13db74
 
     return(
         <>
